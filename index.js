@@ -43,7 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	//? Render the data on the page
 
-	greetEl.innerText = 'Hello ' + data.email.name ?? data.waName ?? data.mobile.name ?? 'User' + '!' //* Set the greeting header
+	let name = data.email.name ?? data.waName ?? data.mobile.name
+
+	greetEl.innerText = name === 'undefined' ? 'User Data!' : `Hello, ${name.split(' ')[0]}!` //* Set the greeting header
 	data && renderElementsfromObj(data) //* Render the data on the page
 
 	//* Set the sign-out button action
