@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	 * */
 	const renderElementsfromObj = (input, prepend) =>
 		Object.entries(input).forEach(([key, value]) => {
+			// Skip null and undefined
+			if (value === null || value === undefined) return
 			//? Skip the token key from being rendered
 			if (key === 'token') return
 			//? If the value is an object, recursively render its key-value pairs
