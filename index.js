@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	//? Render the data on the page
 
-	greetEl.innerText = 'Hello ' + data.waName ?? data.mobile.name ?? data.email.name ?? 'User' + '!' //* Set the greeting header
+	greetEl.innerText = 'Hello ' + data.email.name ?? data.waName ?? data.mobile.name ?? 'User' + '!' //* Set the greeting header
 	data && renderElementsfromObj(data) //* Render the data on the page
 
 	//* Set the sign-out button action
