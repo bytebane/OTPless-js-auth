@@ -22,7 +22,7 @@
 - Add script tag
 
 ```HTML
-<script type="text/javascript" src="https://otpless.com/auth.js" cid="PSNMYE48LDJMC5SN2I4UTOD9S9QP4L4P"></script>
+<script type="text/javascript" src="https://otpless.com/auth.js"></script>
 ```
 
 - Add the following function in your script
